@@ -1,0 +1,42 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'poppins', sans-serif;
+ }
+ html,body{
+    display: grid;
+    height:100%;
+    place-items: center;
+    tet-align: center;
+    background: #0f0e0e
+}
+.container{
+    width: 400px;
+    background: #3f383b;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+.container .star-widgets input{
+  display: none;
+
+}
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color:#fd4;
+}
+input:checked ~ label{
+     color:#fd4
+}
+
+
